@@ -1,13 +1,56 @@
 body {
+  background: #0b1220;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Source Code Pro", monospace;
+  color: #d1d5db;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.calendar {
+  background: #111827;
+  padding: 12px 18px;
+  border-radius: 8px;
+  width: 240px;
+}
+
+/* Header */
+.calendar-header {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-bottom: 10px;
+}
+
+/* Weekdays */
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+/* Days grid */
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 13px;
+}
+
+.calendar-cell {
+  padding: 4px 0;
+  text-align: center;
+}
+
+/* Selected date highlight EXACT like screenshot */
+.calendar-selected {
+  background: #4b5563;
+  border-radius: 3px;
+  color: #ffffff;
 }

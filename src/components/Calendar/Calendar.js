@@ -2,7 +2,7 @@ import React from "react";
 import { getMonthMatrix } from "./calendarUtils";
 
 export default function Calendar({ date }) {
-  const d = new Date(date); // correct handling
+  const d = new Date(date); 
   const monthName = d.toLocaleString("default", { month: "long" });
   const year = d.getFullYear();
   const selected = d.getDate();
